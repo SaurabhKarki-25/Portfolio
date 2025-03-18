@@ -13,6 +13,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Single route rendering our one-page portfolio
+app.get('/health', (req, res) => res.status(200).send('OK'));
+
 app.get('/', (req, res) => {
   res.render('index', { title: "Saurabh's Portfolio" });
 });
