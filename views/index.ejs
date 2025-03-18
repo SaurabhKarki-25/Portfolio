@@ -1,0 +1,112 @@
+<!-- views/index.ejs -->
+<%- include('partials/header') %>
+
+
+<!-- Home Section -->
+<section id="home" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white">
+  <h1 class="text-5xl md:text-7xl font-extrabold mb-4 animate-on-scroll opacity-0 text-center">
+    Hello, I'm Saurabh
+  </h1>
+  <p class="text-xl md:text-2xl mb-8 text-center max-w-2xl animate-on-scroll opacity-0">
+    A passionate Web Developer crafting interactive and responsive web experiences.
+  </p>
+  <a href="#projects" class="bg-white text-red-500 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300">
+    See My Work
+  </a>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="container mx-auto py-16 px-4 animate-on-scroll opacity-0">
+  <div class="bg-white rounded-lg shadow-2xl p-8 transform hover:-translate-y-2 transition duration-300">
+    <h2 class="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
+    <p class="text-gray-600 text-lg">
+      I'm a detail-oriented developer who loves turning innovative ideas into reality. My journey in web development is driven by a pursuit of excellence and a passion for crafting seamless user experiences.
+    </p>
+    <!-- GitHub Link -->
+    <a href="https://github.com/SaurabhKarki-25" target="_blank" class="mt-6 inline-flex items-center text-indigo-600 font-bold hover:underline">
+      <i class="fab fa-github mr-2"></i> View My GitHub
+    </a>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="bg-gray-50 py-16 animate-on-scroll opacity-0">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold mb-2 text-indigo-600">HTML &amp; CSS</h3>
+        <p class="text-gray-600">Building semantic and responsive webpages.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold mb-2 text-green-600">JavaScript</h3>
+        <p class="text-gray-600">Creating dynamic and interactive user experiences.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold mb-2 text-purple-600">React &amp; Node.js</h3>
+        <p class="text-gray-600">Developing full-stack web applications with modern technologies.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold mb-2 text-blue-600">Express &amp; EJS</h3>
+        <p class="text-gray-600">Creating server-side apps with clean architecture and engaging interfaces.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold mb-2 text-red-600">Tailwind CSS</h3>
+        <p class="text-gray-600">Rapidly styling responsive interfaces with utility-first design.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transform hover:scale-105 transition duration-300">
+        <h3 class="text-xl font-bold mb-2 text-yellow-600">C++</h3>
+        <p class="text-gray-600">Solving complex algorithm challenges with precision.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container mx-auto py-16 px-4 animate-on-scroll opacity-0">
+  <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  
+    <!-- Project Card 1: Music Player -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer"
+         onclick="window.open('https://saurabh-player.netlify.app/', '_blank')">
+      <img src="images/music.avif" alt="Music Player" class="w-full h-56 object-cover">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">Dynamic Music Player</h3>
+        <p class="text-gray-600 mb-4">
+          Experience the perfect fusion of style and performance with this interactive music player. Built with modern technologies, it offers smooth transitions, intuitive controls, and fluid animations that redefine the music experience. Listen to your favorite tracks and enjoy a user interface designed to captivate and engage.
+        </p>
+        <a href="https://saurabh-player.netlify.app/" target="_blank" class="text-indigo-600 font-bold hover:underline">
+          Explore Project
+        </a>
+      </div>
+    </div>
+    
+    <!-- Project Card 2: Personal Portfolio Website -->
+    <div class="bg-white rounded-lg shadow-2xl overflow-hidden transform hover:scale-105 transition duration-300 cursor-pointer"
+         onclick="window.location.href='/'">
+      <img src="images/Portfolio.jpg" alt="Personal Portfolio Website" class="w-full h-56 object-cover">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold mb-2 text-gray-800">Personal Portfolio Website</h3>
+        <p class="text-gray-600 mb-4">
+          A dynamic portfolio showcasing interactive and responsive projects built using modern technologies. Explore my work, creativity, and technical prowess all in one immersive experience.
+        </p>
+        <a href="/" class="text-indigo-600 font-bold hover:underline">
+          Explore Project
+        </a>
+      </div>
+    </div>
+  
+  </div>
+</section>
+
+
+    
+  </div>
+</section>
+
+
+<%- include('partials/footer') %>
